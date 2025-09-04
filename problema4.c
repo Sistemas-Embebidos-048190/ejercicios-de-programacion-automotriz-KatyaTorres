@@ -10,7 +10,7 @@
 uint16_t get_engine_rpm(const uint8_t* can_data)
 {
   // Modifica esta funcion
-  return 0;
+  return ((uint16_t)can_data[0]<<8)|can_data[1];
 }
 
 
